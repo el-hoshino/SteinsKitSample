@@ -21,6 +21,7 @@
 		BFA2E9262255D4F700C8C1C0 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9252255D4F700C8C1C0 /* Usecase.swift */; };
 		BFA2E9282255D5F400C8C1C0 /* AsciiStringValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */; };
 		BFA2E92A2255DC8500C8C1C0 /* UsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */; };
+		BFA2E92D2256059200C8C1C0 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E92C2256059200C8C1C0 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BFA2E9252255D4F700C8C1C0 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiStringValidationResult.swift; sourceTree = "<group>"; };
 		BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseTests.swift; sourceTree = "<group>"; };
+		BFA2E92C2256059200C8C1C0 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				BF2D355F2255C6E200D44C52 /* AppDelegate.swift */,
-				BF2D35612255C6E200D44C52 /* ViewController.swift */,
 				BF568AF02255C8D300EB3A33 /* Repository.swift */,
 				BFA2E9212255D22100C8C1C0 /* ValidationUtility.swift */,
 				BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */,
 				BFA2E9252255D4F700C8C1C0 /* Usecase.swift */,
+				BF2D35612255C6E200D44C52 /* ViewController.swift */,
 				BF2D35632255C6E200D44C52 /* Main.storyboard */,
 				BF2D35662255C6E600D44C52 /* Assets.xcassets */,
 				BF2D35682255C6E600D44C52 /* LaunchScreen.storyboard */,
@@ -136,6 +138,7 @@
 				BF2D35742255C6E600D44C52 /* RepositoryTests.swift */,
 				BFA2E9232255D39E00C8C1C0 /* ValidationUtilityTests.swift */,
 				BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */,
+				BFA2E92C2256059200C8C1C0 /* ViewControllerTests.swift */,
 				BF2D35762255C6E600D44C52 /* Info.plist */,
 			);
 			path = SteinsKitSampleTests;
@@ -327,6 +330,7 @@
 			files = (
 				BF2D35752255C6E600D44C52 /* RepositoryTests.swift in Sources */,
 				BFA2E9242255D39E00C8C1C0 /* ValidationUtilityTests.swift in Sources */,
+				BFA2E92D2256059200C8C1C0 /* ViewControllerTests.swift in Sources */,
 				BFA2E92A2255DC8500C8C1C0 /* UsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
