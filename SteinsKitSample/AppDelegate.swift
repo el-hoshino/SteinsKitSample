@@ -8,12 +8,15 @@
 
 import UIKit
 
+private let repositoryInstance = Repository()
+private let usecaseInstance = Usecase(repository: repositoryInstance, validation: ValidationUtility())
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    var usecase: UsecaseProtocol { return usecaseInstance }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

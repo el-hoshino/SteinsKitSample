@@ -18,7 +18,7 @@ protocol UsecaseProtocol: AnyObject {
 class ViewController: UIViewController {
     
     // It's better to set this property through DI
-    var usecase: UsecaseProtocol!
+    var usecase = (UIApplication.shared.delegate as! AppDelegate).usecase
     private var calculationTimer: Timer?
     
     private var outputTextArray: [String] = ["", ""] {

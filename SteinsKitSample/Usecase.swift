@@ -50,6 +50,22 @@ final class Usecase {
     
 }
 
+extension Usecase: UsecaseProtocol {
+    
+    var timesOfCalculation: AnyObservable<Int> {
+        return _timesOfCalculation.asAnyObservable()
+    }
+    
+    var calculationResult: AnyObservable<String> {
+        return _calculationResult.asAnyObservable()
+    }
+    
+    func calculateLength(of string: String) {
+        return _calculateLength(of: string)
+    }
+    
+}
+
 private extension Result where Success == Int {
     
     var resultValue: String {

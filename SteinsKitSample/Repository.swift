@@ -18,6 +18,10 @@ final class Repository {
         return components
     }()
     
+}
+
+extension Repository: RepositoryProtocol {
+    
     func count(string: String, completion: @escaping (Result<Int, Error>) -> Void) {
         
         struct Response: Decodable {

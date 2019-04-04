@@ -10,6 +10,10 @@ import Foundation
 
 final class ValidationUtility {
     
+}
+
+extension ValidationUtility: ValidationUtilityProtocol {
+    
     func result(of input: String) -> AsciiStringValidationResult {
         
         if input.contains(where: { !$0.isASCII }) {
