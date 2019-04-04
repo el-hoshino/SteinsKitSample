@@ -1,5 +1,5 @@
 //
-//  SteinsKitSampleTests.swift
+//  RepositoryTests.swift
 //  SteinsKitSampleTests
 //
 //  Created by 史 翔新 on 2019/04/04.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import SteinsKitSample
 
-class SteinsKitSampleTests: XCTestCase {
+class RepositoryTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,6 +22,25 @@ class SteinsKitSampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let repository = Repository()
+        let testString = "abcdefg"
+        let expectingResult = 7
+        
+        let getting = expectation(description: "getting")
+        repository.count(string: testString) { (result) in
+            defer { getting.fulfill() }
+            
+            switch result {
+            case .failure(let failure):
+                XCTFail(String(describing: failure))
+                
+            case .success(let int):
+                XCTAssert(int == expectingResult, "Invalid result \(int), expected \(expectingResult)")
+            }
+        }
+        wait(for: [getting], timeout: 2)
+        
     }
 
     func testPerformanceExample() {

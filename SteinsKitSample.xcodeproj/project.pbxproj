@@ -12,8 +12,9 @@
 		BF2D35652255C6E200D44C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D35632255C6E200D44C52 /* Main.storyboard */; };
 		BF2D35672255C6E600D44C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2D35662255C6E600D44C52 /* Assets.xcassets */; };
 		BF2D356A2255C6E600D44C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2D35682255C6E600D44C52 /* LaunchScreen.storyboard */; };
-		BF2D35752255C6E600D44C52 /* SteinsKitSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D35742255C6E600D44C52 /* SteinsKitSampleTests.swift */; };
+		BF2D35752255C6E600D44C52 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D35742255C6E600D44C52 /* RepositoryTests.swift */; };
 		BF2D35802255C6E600D44C52 /* SteinsKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D357F2255C6E600D44C52 /* SteinsKitSampleUITests.swift */; };
+		BF568AF12255C8D300EB3A33 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF568AF02255C8D300EB3A33 /* Repository.swift */; };
 		BFA2E9202255D18300C8C1C0 /* SteinsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA2E91F2255D18200C8C1C0 /* SteinsKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +44,12 @@
 		BF2D35692255C6E600D44C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF2D356B2255C6E600D44C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2D35702255C6E600D44C52 /* SteinsKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteinsKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF2D35742255C6E600D44C52 /* SteinsKitSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteinsKitSampleTests.swift; sourceTree = "<group>"; };
+		BF2D35742255C6E600D44C52 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		BF2D35762255C6E600D44C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2D357B2255C6E600D44C52 /* SteinsKitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteinsKitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2D357F2255C6E600D44C52 /* SteinsKitSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteinsKitSampleUITests.swift; sourceTree = "<group>"; };
 		BF2D35812255C6E600D44C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF568AF02255C8D300EB3A33 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		BFA2E91C2255D08800C8C1C0 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
 		BFA2E91F2255D18200C8C1C0 /* SteinsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SteinsKit.framework; path = Carthage/Build/iOS/SteinsKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 			children = (
 				BF2D355F2255C6E200D44C52 /* AppDelegate.swift */,
 				BF2D35612255C6E200D44C52 /* ViewController.swift */,
+				BF568AF02255C8D300EB3A33 /* Repository.swift */,
 				BF2D35632255C6E200D44C52 /* Main.storyboard */,
 				BF2D35662255C6E600D44C52 /* Assets.xcassets */,
 				BF2D35682255C6E600D44C52 /* LaunchScreen.storyboard */,
@@ -117,7 +120,7 @@
 		BF2D35732255C6E600D44C52 /* SteinsKitSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF2D35742255C6E600D44C52 /* SteinsKitSampleTests.swift */,
+				BF2D35742255C6E600D44C52 /* RepositoryTests.swift */,
 				BF2D35762255C6E600D44C52 /* Info.plist */,
 			);
 			path = SteinsKitSampleTests;
@@ -296,6 +299,7 @@
 			files = (
 				BF2D35622255C6E200D44C52 /* ViewController.swift in Sources */,
 				BF2D35602255C6E200D44C52 /* AppDelegate.swift in Sources */,
+				BF568AF12255C8D300EB3A33 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF2D35752255C6E600D44C52 /* SteinsKitSampleTests.swift in Sources */,
+				BF2D35752255C6E600D44C52 /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
