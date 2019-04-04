@@ -18,7 +18,9 @@
 		BFA2E9202255D18300C8C1C0 /* SteinsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA2E91F2255D18200C8C1C0 /* SteinsKit.framework */; };
 		BFA2E9222255D22100C8C1C0 /* ValidationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9212255D22100C8C1C0 /* ValidationUtility.swift */; };
 		BFA2E9242255D39E00C8C1C0 /* ValidationUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9232255D39E00C8C1C0 /* ValidationUtilityTests.swift */; };
+		BFA2E9262255D4F700C8C1C0 /* Usecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9252255D4F700C8C1C0 /* Usecase.swift */; };
 		BFA2E9282255D5F400C8C1C0 /* AsciiStringValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */; };
+		BFA2E92A2255DC8500C8C1C0 /* UsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,9 @@
 		BFA2E91F2255D18200C8C1C0 /* SteinsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SteinsKit.framework; path = Carthage/Build/iOS/SteinsKit.framework; sourceTree = "<group>"; };
 		BFA2E9212255D22100C8C1C0 /* ValidationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtility.swift; sourceTree = "<group>"; };
 		BFA2E9232255D39E00C8C1C0 /* ValidationUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtilityTests.swift; sourceTree = "<group>"; };
+		BFA2E9252255D4F700C8C1C0 /* Usecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usecase.swift; sourceTree = "<group>"; };
 		BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsciiStringValidationResult.swift; sourceTree = "<group>"; };
+		BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsecaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 				BF568AF02255C8D300EB3A33 /* Repository.swift */,
 				BFA2E9212255D22100C8C1C0 /* ValidationUtility.swift */,
 				BFA2E9272255D5F400C8C1C0 /* AsciiStringValidationResult.swift */,
+				BFA2E9252255D4F700C8C1C0 /* Usecase.swift */,
 				BF2D35632255C6E200D44C52 /* Main.storyboard */,
 				BF2D35662255C6E600D44C52 /* Assets.xcassets */,
 				BF2D35682255C6E600D44C52 /* LaunchScreen.storyboard */,
@@ -130,6 +135,7 @@
 			children = (
 				BF2D35742255C6E600D44C52 /* RepositoryTests.swift */,
 				BFA2E9232255D39E00C8C1C0 /* ValidationUtilityTests.swift */,
+				BFA2E9292255DC8500C8C1C0 /* UsecaseTests.swift */,
 				BF2D35762255C6E600D44C52 /* Info.plist */,
 			);
 			path = SteinsKitSampleTests;
@@ -308,6 +314,7 @@
 			files = (
 				BFA2E9282255D5F400C8C1C0 /* AsciiStringValidationResult.swift in Sources */,
 				BFA2E9222255D22100C8C1C0 /* ValidationUtility.swift in Sources */,
+				BFA2E9262255D4F700C8C1C0 /* Usecase.swift in Sources */,
 				BF2D35622255C6E200D44C52 /* ViewController.swift in Sources */,
 				BF2D35602255C6E200D44C52 /* AppDelegate.swift in Sources */,
 				BF568AF12255C8D300EB3A33 /* Repository.swift in Sources */,
@@ -320,6 +327,7 @@
 			files = (
 				BF2D35752255C6E600D44C52 /* RepositoryTests.swift in Sources */,
 				BFA2E9242255D39E00C8C1C0 /* ValidationUtilityTests.swift in Sources */,
+				BFA2E92A2255DC8500C8C1C0 /* UsecaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
